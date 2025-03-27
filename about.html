@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stye.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <div class="logo-container">
+            <img src="images/c logo.jpg" alt="Tech Innovators Inc">
+            <h1>Tech Innovators Inc</h1>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="about-content">
+            <h2>About Tech Innovators Inc</h2>
+            <p>
+                The Integrated Polytechnic Regional College (IPRC) of Karongi
+                is one of eight IPRCs that make up Rwanda Polytechnic.
+                We offer Technical and Vocational Education Training at
+                all levels up to level seven commonly known as Advanced Diploma.
+                We are determined to equip our students with practical knowledge
+                and skills that enable them to create jobs and compete in the labor
+                market.
+            </p>
+            
+            <div class="courses">
+                <h1>Courses That We Offer</h1>
+                <div class="course-list">
+                    <a href="#">Information Technology</a>
+                    <a href="#">Hospitality</a>
+                    <a href="#">Mechanical Engineering</a>
+                    <a href="#">Hospitality</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="announcements">
+            <h3>Announcements</h3>
+            <marquee id="announcement" behavior="scroll" direction="up" scrollamount="5" onmouseover="stopMarquee()" onmouseout="startMarquee()">
+                1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.<br><br>
+
+                2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.<br><br>
+
+                3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+            </marquee>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tech Innovator Inc. All Rights Reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+        </p>
+        <div class="contact-info">
+            <div>
+                <i class="fa-solid fa-phone-volume"></i>
+                (+250) 788871075
+            </div>
+            <div>
+                <i class="fa-regular fa-envelope"></i>
+                info@iprckarongi.rp.ac.rw
+            </div>
+            <div>
+                <i class="fa-brands fa-x-twitter"></i>
+                @rp_karongicollege
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function stopMarquee() {
+            document.getElementById("announcement").stop();
+        }
+    
+        function startMarquee() {
+            document.getElementById("announcement").start();
+        }
+    </script>
+
+    
+</body>
+</html>

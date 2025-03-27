@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stye.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <div class="logo-container">
+            <img src="images/c logo.jpg" alt="Tech Innovators Inc">
+            <h1>Tech Innovators Inc</h1>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <h2>Register</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label>Gender</label>
+                    <div class="gender-group">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female" required> Female</label>
+                        <label><input type="radio" name="gender" value="other" required> Other</label>
+                    </div>
+                </div>
+    
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="profile-picture">Upload Profile Picture</label>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+                </div>
+    
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        <div class="announcements">
+            <h3>Announcements</h3>
+            <marquee id="announcement" behavior="scroll" direction="up" scrollamount="5" onmouseover="stopMarquee()" onmouseout="startMarquee()">
+                1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.<br><br>
+
+                2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.<br><br>
+
+                3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti.
+            </marquee>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tech Innovator Inc. All Rights Reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+        </p>
+        <div class="contact-info">
+            <div>
+                <i class="fa-solid fa-phone-volume"></i>
+                (+250) 788871075
+            </div>
+            <div>
+                <i class="fa-regular fa-envelope"></i>
+                info@iprckarongi.rp.ac.rw
+            </div>
+            <div>
+                <i class="fa-brands fa-x-twitter"></i>
+                @rp_karongicollege
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function stopMarquee() {
+            document.getElementById("announcement").stop();
+        }
+    
+        function startMarquee() {
+            document.getElementById("announcement").start();
+        }
+    </script>
+
+    
+</body>
+</html>
