@@ -39,28 +39,26 @@
     </nav>
 
     <main>
-        <div class="features-container">
-            <div class="feature-card">
-                <h2>Geolocation API</h2>
-                <button onclick="getLocation()">Get Location</button>
-                <p id="geo-output"></p>
-            </div>
-            
-            <div class="feature-card">
-                <h2>Draw on the Canvas</h2>
-                <canvas id="drawCanvas" width="300" height="300"></canvas>
-                <button onclick="clearCanvas()">Clear Canvas</button>
-            </div>
-            
-            <div class="feature-card">
-                <h2>Web Storage API</h2>
-                <input type="text" id="data" placeholder="Enter some text">
-                <button onclick="saveData()">Save</button>
-                <button onclick="loadData()">Load</button>
-                <p id="storage-output"></p>
-            </div>
-        </div>
-        
+        <section class="login-container">
+            <h1>LOGIN TO CONTINUE</h1>
+            <form class="login-form" action="" method="post" autocomplete="off">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="login-btn">Login</button>
+                
+                <div class="signup-link">
+                    Don't have an account? <a href="signup.html">Sign Up</a>
+                </div>
+            </form>
+        </section>
         <div class="announcements">
             <h3>Announcements</h3>
             <marquee id="announcement" behavior="scroll" direction="up" scrollamount="5" onmouseover="stopMarquee()" onmouseout="startMarquee()">

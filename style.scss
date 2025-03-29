@@ -431,6 +431,133 @@ footer a {
     width: 80%;
     margin-bottom: 10px;
 }
+/* Login Form */
+.login-container {
+    flex: 1;
+    max-width: 600px;
+    background-color: $color9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px $color3;
+    margin: 4px;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: $color5;
+}
+
+.login-container .login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container .login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-container .login-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-container .login-form .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $color4;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-btn {
+    padding: 12px;
+    background-color: $color8;
+    color: $color6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: $color8;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: $color8;
+    text-decoration: none;
+}
+/*toogle*/
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+  
+  /* Hide Checkbox */
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Slider (Switch Button) */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  /* Circle inside the slider */
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  /* Change slider color when checked */
+  input:checked + .slider {
+    background-color: #4CAF50;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(24px);
+  }
+    /* Default Light Mode */
+body {
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: background 0.4s, color 0.4s;
+  }
+  
+  /* Dark Mode when Checkbox is Checked */
+  body:has(#modeToggle:checked) {
+    background-color: black;
+    color: white;
+  }
 
 
 /* Responsive Design */
@@ -472,6 +599,9 @@ footer a {
     #drawCanvas {
         width: 100%;
         height: auto;
+    }
+    .login-container, .announcements {
+        max-width: 100%;
     }
 }
 @media (max-width: 400px) {
