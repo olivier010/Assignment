@@ -6,6 +6,14 @@ $color5: #2c3e50;
 $color6: white;
 $color7: #34495e;
 $color8: #3498db;
+$color9: #fff;
+$color10: #ccc; 
+$color11: gray;
+$color12: #555;
+$color13:  #ccc;
+$color14: #f0f8ff;
+$color15: #e1f0fa;
+$color16: #ddd;
 * {
     margin: 0;
     padding: 0;
@@ -15,14 +23,14 @@ $color8: #3498db;
 body{
 
     line-height: 1.6;
-    color: #333;
+    color: $color1;
     background-color: $color2;
 }
 
 header {
-    background-color: #fff;
+    background-color: $color9;
     padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px $color3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +49,7 @@ header {
 .search-box {
     display: flex;
     align-items: center;
-    border: 2px solid #ccc;
+    border: 2px solid $color10;
     border-radius: 25px;
     padding: 5px;
     width: 250px;
@@ -56,12 +64,15 @@ header {
 }
 
 .search-box i {
-    color: gray;
+    color: $color11;
     padding: 5px;
 }
 
 nav {
-    background-color: #2c3e50;
+    background-color: $color5;
+    position: fixed;
+    top: 0;
+    position: sticky;
 }
 
 nav ul {
@@ -75,7 +86,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: $color6;
     text-decoration: none;
     display: block;
     padding: 15px 10px;
@@ -83,9 +94,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #34495e;
+    background-color: $color7;
 }
 main {
+    flex: wrap;
     display: flex;
     padding: 20px;
     max-width: 1200px;
@@ -99,7 +111,7 @@ main {
 
 .content h2 {
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: $color5;
 }
 
 .image-gallery {
@@ -113,24 +125,25 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px $color3;
 }
 
 .announcements {
-    flex: 30%;
-    background-color: #fff;
+    flex: 1;
+    min-width: 300px;
+    background-color: $color9;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px $color3;
 }
 
 .announcements h3 {
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: $color5;
     text-align: center;
 } footer {
-    background-color: #2c3e50;
-    color: white;
+    background-color: $color5;
+    color: $color6;
     padding: 30px 0;
     text-align: center;
 }
@@ -140,7 +153,7 @@ footer p {
 }
 
 footer a {
-    color: #3498db;
+    color: $color8;
     text-decoration: none;
 }
 
@@ -157,17 +170,18 @@ footer a {
 }
 /*form css*/
 .form-container {
-    background: #fff;
+    background: $color9;
     padding: 20px;
+    margin: 6px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 500px;
+    box-shadow: 0 4px 8px $color3;
+    width: 700px;
 }
 
 .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: $color1;
 }
 
 /* Input Fields */
@@ -179,13 +193,13 @@ footer a {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #555;
+    color: $color12;
 }
 
 .input-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $color13;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -209,8 +223,8 @@ footer a {
 .submit-btn {
     width: 100%;
     padding: 10px;
-    background: #007bff;
-    color: white;
+    background: $color8;
+    color: $color6;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -219,20 +233,22 @@ footer a {
 }
 
 .submit-btn:hover {
-    background: #0056b3;
+    background: $color8;
 }
 
 /*about us*/
 .about-content {
     flex: 70%;
-    background-color: #fff;
+    background-color: $color9;
     padding: 30px;
+    margin: 8px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px $color3;
+    width: 500px;
 }
 
 .about-content h2 {
-    color: #2c3e50;
+    color: $color5;
     margin-bottom: 20px;
     font-size: 28px;
 }
@@ -248,7 +264,7 @@ footer a {
 }
 
 .courses h1 {
-    color: #2c3e50;
+    color: $color5;
     margin-bottom: 20px;
     font-size: 24px;
 }
@@ -262,34 +278,33 @@ footer a {
 .course-list a {
     display: block;
     padding: 15px;
-    background-color: #f0f8ff;
+    background-color: $color14;
     border-radius: 6px;
     text-decoration: none;
-    color: #2c3e50;
+    color: $color5;
     font-weight: bold;
     transition: background-color 0.3s;
     text-align: center;
 }
 
 .course-list a:hover {
-    background-color: #e1f0fa;
+    background-color: $color15;
 }
 
 /*contact us*/
 .contact-form {
     flex: 1;
-    min-width: 200px;
-    background-color: #fff;
+    min-width: 300px;
+    background-color: $color9;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    float: left;
+    box-shadow: 0 2px 10px $color3;
 }
 
 .contact-form h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #2c3e50;
+    color: $color5;
 }
 
 .form-group {
@@ -306,7 +321,7 @@ footer a {
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid $color16;
     border-radius: 4px;
     font-size: 16px;
 }
@@ -319,8 +334,8 @@ footer a {
 .submit-btn {
     width: 100%;
     padding: 12px;
-    background-color: #3498db;
-    color: white;
+    background-color: $color8;
+    color: $color6;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -329,23 +344,23 @@ footer a {
 }
 
 .submit-btn:hover {
-    background-color: #2980b9;
+    background-color: $color8;
 }
 
 .location {
     flex: 1;
     min-width: 300px;
-    background-color: #fff;
-    padding: 50px;
+    background-color: $color9;
+    padding: 30px;
+    margin: 5px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    float: left;
+    box-shadow: 0 2px 10px $color3;
 }
 
 .location h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: $color5;
 }
 
 .map-container {
@@ -360,6 +375,63 @@ footer a {
     height: 100%;
     border: none;
 }
+
+/*features*/
+
+.features-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.feature-card {
+    background-color: $color9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px $color3;
+    width: 50%;
+    height: 85%;
+    margin: 1px;
+}
+
+.feature-card h2 {
+    margin-bottom: 15px;
+    color: $color5;
+    text-align: center;
+}
+
+.feature-card button {
+    padding: 8px 16px;
+    background-color: $color8;
+    color: $color6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+.feature-card button:hover {
+    background-color: $color8;
+}
+
+#drawCanvas {
+    border: 1px solid $color4;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: $color6;
+}
+
+#data {
+    padding: 8px;
+    border: 1px solid $color4;
+    border-radius: 4px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -393,6 +465,13 @@ footer a {
     .form-container {
         width: 100%;
         margin: 4px;
+    }
+    .map-container {
+        height: 300px;
+    }
+    #drawCanvas {
+        width: 100%;
+        height: auto;
     }
 }
 @media (max-width: 400px) {
